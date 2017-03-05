@@ -7,10 +7,11 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/pixel.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<script src="https://use.fontawesome.com/c811b1b704.js"></script>
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -25,7 +26,79 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-background-color="#00BCD4" id="cover">
+					<h2>Creating Art</h2>
+					<h2>with a Raspberry Pi</h2>
+					<br />
+					<h5>Adventures in trying out hardware, code, and having fun in a personal project</h5>
+					<p id="my-site"><a href="https://stephanie.lol/">stephanie.lol</a></p>
+					<p id="my-name">Stephanie Nemeth<span id="contact-details"><i class="fa fa-twitter"></i> @stephaniecodes</span></p>
+					<!--
+						To apply styles to the certain slides
+						set slide ID to get needed elements
+						-->
+					<style>
+						#cover h2 {
+							margin: 20px -30px 0 0;
+							text-align:left;
+							color: #fff;
+						}
+
+						#cover p {
+							color:#B2EBF2;
+							font-family: 'VT323';
+							font-size:1em;
+						}
+						#my-name {
+							line-height: 120%;
+							margin: 0 0 0;
+							text-align:left;
+						}
+						#cover a {
+							color:#B2EBF2;
+						}
+						.slide i {
+							font-style: normal;
+						}
+						#contact-details {
+							margin-left:360px;
+						}
+						#my-site {
+							margin: 90px 0 0;
+							line-height: 130%;
+							text-align: right;
+							}
+					</style>
+				</section>
+
+				<section class="slide about-me" id="about-me">
+					<img src="" alt="">
+					<h2>Hi, I'm Stephanie.</h2>
+					<p class="next" id="emoji">👩‍🔬 <span id="arrow"><i class="fa fa-long-arrow-right"></i></span> 👩‍💻</p>
+					<p class="next">Coding for ~2 years</p>
+					<style>
+						.about-me h2 {
+							color:#212121;
+							font-family: 'Press Start 2P', cursive;
+							font-size: 1.8em;
+							text-align: center;
+							margin-top: 20px;
+						}
+						#arrow i {
+							font-size: 0.6em;
+						}
+						#emoji {
+							font-size: 4em;
+							text-align: center;
+							margin: 0px;
+						}
+						.about-me p {
+							font-size: 1.8em;
+							text-align: center;
+							margin: 0px;
+						}
+					</style>
+				</section>
 			</div>
 		</div>
 
