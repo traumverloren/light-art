@@ -54,7 +54,7 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 2.5em; }
+  font-size: 1.2em; }
 
 .reveal h2 {
   font-size: 1.2em; }
@@ -81,7 +81,9 @@ body {
  * OTHER
  *********************************************/
 .reveal p {
+  color: #000;
   margin: 20px 0;
+  font-size: 1.2em;
   line-height: 1.3; }
 
 /* Ensure certain elements are never larger than the slide itself */
