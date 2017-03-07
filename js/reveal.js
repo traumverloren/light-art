@@ -50,13 +50,20 @@
 			maxScale: 2.0,
 
 			// Display controls in the bottom right corner
-			controls: true,
+			controls: false,
 
 			// Display a presentation progress bar
 			progress: true,
 
-			// Display the page number of the current slide
-			slideNumber: false,
+			// Shows the slide number using default formatting
+			slideNumber: true,
+
+			// Slide number formatting can be configured using these variables:
+			//  "h.v":  horizontal . vertical slide number (default)
+			//  "h/v":  horizontal / vertical slide number
+			//    "c":  flattened slide number
+			//  "c/t":  flattened slide number / total slides
+			slideNumber: 'c',
 
 			// Push each slide change to the browser history
 			history: false,
@@ -1426,7 +1433,7 @@
 	 * target element.
 	 *
 	 * remaining height = [ configured parent height ] - [ current parent height ]
-	 * 
+	 *
 	 * @param {HTMLElement} element
 	 * @param {number} [height]
 	 */
@@ -3900,7 +3907,7 @@
 			// If there are media elements with data-autoplay,
 			// automatically set the autoSlide duration to the
 			// length of that media. Not applicable if the slide
-			// is divided up into fragments. 
+			// is divided up into fragments.
 			// playbackRate is accounted for in the duration.
 			if( currentSlide.querySelectorAll( '.fragment' ).length === 0 ) {
 				toArray( currentSlide.querySelectorAll( 'video, audio' ) ).forEach( function( el ) {
