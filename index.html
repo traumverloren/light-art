@@ -55,7 +55,7 @@
 							font-style: normal;
 						}
 						#contact-details {
-							margin-left:360px;
+							margin-left: 400px;
 						}
 						#my-site {
 							margin: 90px 0 0;
@@ -728,55 +728,180 @@
 					</video>
 					<style>
 						#my-project2 h2 {
-							margin: 0px -50px 0px -50px;
+							margin: -50px -50px 0px -50px;
 						}
 
 					</style>
 				</section>
 
-				 <!-- Start HERE -->
-
-				<section class="slide" id="my-project3">
+				<section id="my-project3">
 					<h2>How does it send messages?</h2>
-					<img class="place center" src="images/projectschema.png" />
+					<img class="center" data-src="images/projectschema.png" />
 					<style>
 					#my-project3 h2 {
-						color:#212121;
-						font-family: 'Press Start 2P', cursive;
-						font-size: 1.5em;
-						text-align: center;
-						margin-top: 50px;
-						margin: -50px -80px 0 -80px;
+						margin: -50px -80px 20px -80px;
+						font-size: 1em;
 					}
+
 					#my-project3 img {
-						padding-top: 80px;
 						width: 750px;
 						height: auto;
 					}
 					</style>
 				</section>
-				<section class="slide" id="socket-intro">
+
+				<section id="socket-intro">
 					<h2>Socket.IO</h2>
 					<!-- Used socketIO to make communication between the frontend client and raspberry pi easy
 					SocketIO was a lifesaver since I was using different languages
 					for the coding the frontend clients (React/React-Native) & the Raspberry Pi (Python library) -->
-						<p class="next">Simplified communication between the clients & Pi ✨</p>
-						<p class="next">Works on every platform, browser or device 💪</p>
-						<p class="next">Has client-side libraries for Python and React! 🎉</p>
+						<p class="fragment">Simplified communication between the clients & Pi ✨</p>
+						<p class="fragment">Works on every platform, browser or device 💪</p>
+						<p class="fragment">Has client-side libraries for Python and React! 🎉</p>
 					<style>
 						#socket-intro h2 {
-							color:#212121;
-							font-family: 'Press Start 2P', cursive;
-							font-size: 1.5em;
-							text-align: center;
-							margin-top: 50px;
-							line-height: 1.8em;
-							margin: -50px -80px 40px -80px;
+							margin-top: -200px;
+							margin-left: -50px;
+							margin-right: -50px;
 						}
+
 						#socket-intro p {
-							font-size: 1.4em;
+							font-size: 1.1em;
 							text-align: center;
-							margin: 0 -50px 0 -50px;
+							margin: 50px -50px 0px -50px;
+						}
+					</style>
+				</section>
+
+				<section id="pi-lessons-1">
+					<h2>Lessons Learned: Raspberry Pi</h2>
+						<p>It's really easy to get started building with a Pi!</p>
+						<img class="place bottom center" src="images/raspberry_pi_2.jpg" />
+					<style>
+						#pi-lessons-1 h2 {
+							font-size: 0.9em;
+							margin: 50px -100px 10px -100px;
+						}
+
+						#pi-lessons-1 p {
+							font-size: 1em;
+							text-align: center;
+							margin: 50px -50px 30px -50px;
+						}
+						#pi-lessons-1 a {
+							color:#00BCD4;
+						}
+						#pi-lessons-1 img {
+							height: 400px;
+						}
+					</style>
+				</section>
+
+				<section id="pi-lessons-2">
+					<h2>Lessons Learned: Raspberry Pi</h2>
+						<p>I was intimidated for a long time by Pis and Arduinos.</p>
+						<p>Ugh, how do I choose?!</p>
+					<style>
+						#pi-lessons-2 h2 {
+								font-size: 0.9em;
+								margin: -280px -100px 10px -100px;
+							}
+
+							#pi-lessons-2 p {
+								font-size: 1em;
+								text-align: center;
+								margin: 50px -50px 30px -50px;
+							}
+							#pi-lessons-2 a {
+								color:#00BCD4;
+							}
+					</style>
+				</section>
+
+				<section class="slide" id="pi-lessons-3">
+					<h2>Lessons Learned: Raspberry Pi</h2>
+					<div class="emoji"><p><b>Recommendation:</b> A Pi starter kit makes starting a breeze. <img data-src="images/island-emoji.png"></p></div>
+					<img class="place bottom center" src="images/starter_kit.jpeg" />
+
+					<aside class="notes">
+						Full starter kits, least amount of set up, most like normal dev setup (terminal, IDE)
+						Lots of guides for setting it up online.
+						Most like working on your own computer and coding for the web (text editor, terminal, wifi)
+					</aside>
+					<style>
+						#pi-lessons-3 h2 {
+							font-size: 0.9em;
+							margin: 50px -100px 10px -100px;
+
+						}
+						#pi-lessons-3 p {
+							font-size: 1em;
+							text-align: center;
+							margin: 50px -80px 30px -80px;
+						}
+						#pi-lessons-3 a {
+							color:#00BCD4;
+						}
+						#pi-lessons-3 img {
+							height: 420px;
+						}
+
+						#pi-lessons-3 .emoji img {
+							vertical-align: middle;
+							height: auto;
+							width: 50px;
+							margin-left: 20px;
+						}
+					</style>
+				</section>
+
+				<section class="slide" id="pi-lessons-4">
+					<h2>Lessons Learned: Raspberry Pi</h2>
+					<p>Want to do more than light a single LED but intimidated by soldering or wiring straight away?</p>
+					<style>
+						#pi-lessons-4 h2 {
+							font-size: 0.9em;
+							margin: -280px -100px 10px -100px;
+
+						}
+						#pi-lessons-4 p {
+							font-size: 1em;
+							text-align: center;
+							line-height: 150%;
+							margin: 50px -80px 30px -80px;
+						}
+						#pi-lessons-4 a {
+							color:#00BCD4;
+						}
+					</style>
+				</section>
+
+				<section class="slide" id="pi-lessons-5">
+					<h2>Lessons Learned: Raspberry Pi</h2>
+					<p>Look into HATs! Easily plugs into your Pi's GPIO and usually has an established python library available!</p>
+
+					<!-- Lots of the the ‘accessories’ for the Pi (hats, etc) have their own established libraries -
+					Utilize them! Start with just the basic examples
+					and then build up to modifying them to meet your project goals. -->
+
+					<style>
+						#pi-lessons-5 h2 {
+							font-size: 0.9em;
+							margin: -280px -100px 10px -100px;
+
+						}
+						#pi-lessons-5 p {
+							font-size: 1em;
+							text-align: center;
+							line-height: 150%;
+							margin: 50px -80px 30px -80px;
+						}
+						}
+						#pi-lessons-5 a {
+							color:#00BCD4;
+						}
+						#pi-lessons-5 img {
+							height: 420px;
 						}
 					</style>
 				</section>
