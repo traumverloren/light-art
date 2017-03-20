@@ -521,8 +521,12 @@
 				</section>
 
 				<section id="researched">
+					<aside class="notes">
+						I wanted to know if it was possible to build anything interesting without soldering?
+						If there was anything was plug-n-play ready for the raspberry pi.
+					</aside>
 					<div><img data-src="images/technologist-emoji.png"></div>
-					<p class="fragment">So I started googling.</p>
+					<p class="fragment">I started googling.</p>
 					<style>
 						#researched div {
 							margin-top: -300px;
@@ -598,50 +602,25 @@
 				<section id="hats-2">
 					<h2>HATS</h2>
 					<p>Easily plugs into your Pi's GPIO</p>
-					<div id="player"></div>
-					<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
-					<script type="text/javascript">
-						let player;
-						function onYouTubeIframeAPIReady() {
-						    player = new YT.Player('player', {
-						        videoId: '4uSTavgxc9M',
-										playerVars: { 'controls': 0 },
-						        events: {
-						            'onReady': onPlayerReady,
-						            'onStateChange': onPlayerStateChange
-						        }
-						    });
-						}
-						function onPlayerReady(event) {
-						    loopStart();
-						    player.playVideo();
-						}
-						function loopStart() {
-						    player.seekTo(35);   // Start at 7 seconds
-						}
-						function onPlayerStateChange(event) {
-						    if (event.data == YT.PlayerState.PLAYING) {
-						        setTimeout(loopStart, 4000); // After 4 seconds, restart the loop
-						    }
-						}
-					</script>
+					<p>No Soldering or Wiring!</p>
+					<img data-src="images/plug-in-hat.gif" />
 					<style>
 						#hats-2 h2 {
-							margin: -100px -100px 20px -100px;
+							margin: 0px -100px 20px -100px;
 						}
 						#hats-2 p {
 							font-size: 1em;
 							text-align: center;
 							line-height: 150%;
-							margin: 20px -80px 30px -80px;
+							margin: 20px -80px 20px -80px;
 						}
 					</style>
 				</section>
 
 				<section id="hats-3">
 					<h2>HATS</h2>
-					<p>Usually comes an established library!</p>
-					<div><img data-src="images/github-library.png"</div>
+					<p>They have established libraries!</p>
+					<div><img data-src="images/github-library.png"></div>
 
 					<aside class="notes">
 						Libraries are your bestie for getting started.
@@ -670,7 +649,7 @@
 						and then build up to modifying them to meet your project goals.
 					</aside>
 
-					<h2>Some of the HATs</h2>
+					<h2>Many kinds of HATs</h2>
 					<p><a href="https://www.pimoroni.com">pimoroni.com</a></p>
 					<ul>
 						<img src="images/displayotron-hat.jpeg" alt="display-o-tron" />
@@ -683,6 +662,7 @@
 						<div id="over-text-lights"><p class="fragment">LIGHTS</p></div>
 						<div id="over-text-sensor"><p class="fragment">SENSORS</p></div>
 						<div id="over-text-music"><p class="fragment">MUSIC</p></div>
+						<div id="over-text-audio"><p class="fragment">AUDIO</p></div>
 					</ul>
 					<style>
 						#all-the-hats h2 {
@@ -734,6 +714,16 @@
 							width: 100%;
 						}
 
+						#over-text-audio p {
+							font-size: 1em;
+							font-weight: bold;
+							color: fuchsia;
+							position: absolute;
+							top: 500px;
+							left: 580px;
+							width: 100%;
+						}
+
 						#over-text-music p {
 							font-size: 1em;
 							font-weight: bold;
@@ -746,10 +736,46 @@
 					</style>
 				</section>
 
+				<section id="hats-5">
+					<h2>Oh h*ck,</h2>
+					<p>You can even make fruit drums! <img data-src="images/joy-emoji.png"></p>
+					<iframe width='560' height='315' src="https://www.youtube.com/embed/kp3OaLl-OHw?&theme=dark&keyboard=1&autohide=1&modestbranding=1&showinfo=0&rel=0&start=5&end=15&iv_load_policy=3"frameborder="0"></iframe>
+
+					<div id="photo-credit-2"><p>Adafruit Capacitive Touch HAT: <a href="https://www.youtube.com/watch?v=kp3OaLl-OHw">https://www.youtube.com/watch?v=kp3OaLl-OHw</a></p></div>
+					<style>
+						#hats-5 img {
+							vertical-align: middle;
+							height: auto;
+							width: 50px;
+							margin-left: 20px;
+						}
+						#hats-5 h2 {
+							margin: -100px -100px 20px -100px;
+						}
+						#hats-5 p {
+							font-size: 1em;
+							text-align: center;
+							line-height: 150%;
+							margin: 20px -80px 30px -80px;
+						}
+
+						#photo-credit-2 a {
+							color: #00BCD4;
+						}
+
+						#photo-credit-2 p {
+							margin-bottom: 0px;
+							font-size: 0.5em;
+							text-align: center;
+							color: black;
+						}
+					</style>
+				</section>
+
 				<section id="hats-4">
 					<h2>HATS</h2>
 					<p>Usually comes an established library!</p>
-					<div><img data-src="images/github-library.png"</div>
+					<div><img data-src="images/github-library.png"></div>
 
 					<aside class="notes">
 						Libraries are your best friends for getting started.
@@ -769,7 +795,6 @@
 						}
 
 						#hats-4 img {
-							height
 						}
 					</style>
 				</section>
