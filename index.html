@@ -960,7 +960,7 @@
 						#my-vision-4 p {
 							font-size: 1.1em;
 							text-align: center;
-							margin: 0 -50px 100px -50px;
+							margin: 0 -20px 100px -20px;
 						}
 						#my-vision-4 img {
 							width: 250px;
@@ -1003,6 +1003,44 @@
 					</style>
 				</section>
 
+				<section id="user-steps">
+					<aside class="notes">
+						Need to keep my vision of the user flow in my mind so that I know the pieces i need to assemble.
+					</aside>
+					<h2>User Flow</h2>
+					<p class="fragment">User selects a color</p>
+					<p class="fragment">User clicks squares</p>
+					<p class="fragment">User submits design</p>
+					<p class="fragment">Design is displayed on Raspberry Pi</p>
+
+					<style>
+						#user-steps h2 {
+							font-size: 1.1em;
+							margin: -200px -10px 40px -10px;
+						}
+					</style>
+				</section>
+
+				<section id="toolkit-needed">
+					<aside class="notes">
+						Need to keep my vision of the user flow in my mind so that I know the pieces i need to assemble.
+					</aside>
+					<h2>Identify The Tools Needed</h2>
+					<p class="fragment">1. Something to display the art</p>
+					<p class="fragment">2. App where user creates art</p>
+					<p class="fragment">3. Something that connects the two together</p>
+
+					<style>
+						#toolkit-needed h2 {
+							font-size: 0.9em;
+							margin: -200px -10px 40px -10px;
+						}
+						#toolkit-needed p {
+							font-size: 1em;
+						}
+					</style>
+				</section>
+
 				<section class="slide" id="toolkit-1">
 					<aside class="notes">
 						Based off my initial research
@@ -1021,12 +1059,13 @@
 					</div>
 					<style>
 						#toolkit-1 h2 {
-							margin: 0px -50px 30px -50px;
+							font-size: 1em;
+							margin: 0px -30px 30px -30px;
 						}
 						#toolkit-1 p {
 							font-size: 1.1em;
 							text-align: center;
-							margin: 0 -50px 0px -50px;
+							margin: 0 -30px 0px -30px;
 						}
 						#toolkit-1 img {
 							width: 450px;
@@ -1059,13 +1098,14 @@
 
 					<style>
 						#hat-library h2 {
-							margin: 00px -100px 30px -100px;
+							font-size: 1em;
+							margin: 0px -30px 30px -30px;
 						}
 						#hat-library p {
 							font-size: 1em;
 							text-align: center;
 							line-height: 150%;
-							margin: 20px -80px 30px -80px;
+							margin: 20px -30px 30px -30px;
 						}
 
 					</style>
@@ -1085,13 +1125,13 @@
 
 					<style>
 					#toolkit-ui h2 {
-						font-size: 1.1em;
-						margin: -100px -90px 30px -90px;
+						font-size: 1em;
+						margin: -100px -30px 30px -30px;
 					}
 					#toolkit-ui p {
 						font-size: 1.1em;
 						text-align: center;
-						margin: 0 -50px 100px -50px;
+						margin: 0 -30px 100px -30px;
 					}
 					#toolkit-ui img {
 						width: 250px;
@@ -1115,7 +1155,7 @@
 					</aside>
 
 					<div><img data-src="images/anguished-emoji.png"></div>
-					<p>How will the web app communicate with the Pi?</p>
+					<p>How will the app communicate with the Pi?</p>
 					<br/>
 					<style>
 						#how-to-connect div {
@@ -1180,7 +1220,7 @@
 						#what-to-google p {
 							font-size: 1.2em;
 							text-align: center;
-							margin: 20px -80px 0px -80px;
+							margin: 20px 0px 0px 0px;
 						}
 					</style>
 				</section>
@@ -1224,7 +1264,7 @@
 						#what-i-tried-2 p {
 							font-size: 1.2em;
 							text-align: center;
-							margin: 10px -80px 0px -80px;
+							margin: 10px 0px 0px 0px;
 						}
 					</style>
 				</section>
@@ -1261,11 +1301,13 @@
 
 				<section id="what-i-tried-4">
 					<aside class="notes">
-						Not exactly what I needed, but it was a start!
+						Not exactly what I needed, but it gave me
+						something new to investigate to see if it would work for me.
 					</aside>
 					<div><img data-src="images/lightning-emoji.png"></div>
 					<p class="fragment">- Demo of web app written in React</p>
 					<p class="fragment">- Turned on a single LED on RPi over local network</p>
+					<p class="fragment">- Hardware coded in Node.js</p>
 					<p class="fragment">- Used Socket.IO</p>
 					<style>
 						#what-i-tried-4 div {
@@ -1284,9 +1326,9 @@
 						}
 
 						#what-i-tried-4 p {
-							font-size: 1.1em;
+							font-size: 1em;
 							text-align: center;
-							margin: 10px -90px 0px -90px;
+							margin: 10px 0px 30px 0px;
 						}
 					</style>
 				</section>
@@ -1327,9 +1369,9 @@
 						}
 
 						#socket-intro p {
-							font-size: 1.1em;
+							font-size: 1em;
 							text-align: center;
-							margin: 50px -80px 0px -80px;
+							margin: 50px -20px 0px -20px;
 						}
 					</style>
 				</section>
@@ -1337,9 +1379,10 @@
 				<section id="search-2">
 					<aside class="notes">
 						Now i had something i could search for....
+						And I googled. alot.
 					</aside>
 					<div><img data-src="images/detective-emoji.png"></div>
-					<p>More examples of Raspberry Pi projects using Socket.IO?</p>
+					<p>Are there more examples of Raspberry Pi projects using Socket.IO?</p>
 					<style>
 						#search-2 div {
 							margin-top: -300px;
@@ -1348,7 +1391,7 @@
 						#search-2 p {
 							font-size: 1em;
 							text-align: center;
-							margin: 10px -90px 0px -90px;
+							margin: 10px 0px 0px 0px;
 						}
 					</style>
 				</section>
@@ -1356,74 +1399,49 @@
 				<section id="search-found">
 					<aside class="notes">
 					</aside>
-					<div><img data-src="images/raised-hands-emoji.png"></div>
-					<p>I found one amazing video tutorial!</p>
+					<h2>I found one amazing video blog!</2h>
+					<div><img data-src="images/youtube-video.png"></div>
+					<div class="photo-credit-3"><p><a href="http://www.microcasts.tv/episodes/2014/06/21/using-socket-io-to-control-the-raspberry-pi-remotely/">http://www.microcasts.tv/episodes/2014/06/21/using-socket-io-to-control-the-raspberry-pi-remotely/</a></p></div>
+
 					<style>
-						#search-found div {
-							margin-top: -300px;
+						#search-found h2 {
+							font-size: 0.75em;
+							margin: 0px -20px 0px -20px;
 						}
 
-						#search-found p {
-							font-size: 1em;
-							text-align: center;
-							margin: 10px -90px 0px -90px;
+						#search-found img {
+							margin-bottom: 40px;
+							margin-top: 30px;
+							height: 500px;
+							width: auto;
+						}
+						.photo-credit-3 p {
+							font-size: 0.5em;
+							font-family: 'Source Sans Pro';
+						}
+						.photo-credit-3 a {
+							color: #00BCD4;
 						}
 					</style>
 				</section>
 
 				<section id="youtube">
-					<h2>Finding this video empowered me</h2>
-					<div><img data-src="images/youtube-video.png"></div>
-					<div class="photo-credit-3"><p><a href="http://www.microcasts.tv/episodes/2014/06/21/using-socket-io-to-control-the-raspberry-pi-remotely/">http://www.microcasts.tv/episodes/2014/06/21/using-socket-io-to-control-the-raspberry-pi-remotely/</a></p></div>
 					<aside class="notes">
+						Demonstrated controlling a Raspberry Pi from the web
 
 					</aside>
-
-					<style>
-						#youtube h2 {
-							font-size: 0.8em;
-							margin: 0px -100px 20px -100px;
-						}
-						#youtube img {
-							margin: 0px;
-							height: 550px;
-							width: auto;
-						}
-
-						.photo-credit-3 a {
-							color: #00BCD4;
-						}
-
-						.photo-credit-3 p {
-							margin-top: 20px;
-							margin-left: 0px;
-							font-size: 0.4em;
-							color: black;
-						}
-					</style>
-				</section>
-
-				<section id="i-can-do-this">
-					<aside class="notes">
-						I can do it!
-					</aside>
-					<div><img data-src="images/muscle-emoji.png"></div>
+					<div><img data-src="images/raised-hands-emoji.png"></div>
+					<p>Finally, I was empowered!</p>
 					<p>Now I believed I could build it!</p>
 					<style>
-						#i-can-do-this div {
+						#youtube div {
 							margin-top: -300px;
-						}
-
-						#i-can-do-this p {
-							font-size: 1em;
-							text-align: center;
-							margin: 10px -90px 0px -90px;
 						}
 					</style>
 				</section>
 
 				<section id="my-project-schema">
-					<h2>How does it work?</h2>
+					<h2>Project Design</h2>
 					<img class="center" data-src="images/project-diagram.png" />
 					<style>
 					#my-project-schema h2 {
@@ -1432,11 +1450,59 @@
 					}
 
 					#my-project-schema img {
-						width: 900px;
+						width: 1200px;
 						height: auto;
 					}
 					</style>
 				</section>
+
+				<section id="to-build">
+					<aside class="notes">
+						#TODO
+					</aside>
+					<h2>Components to Build</h2>
+					<p class="fragment">Raspberry Pi Python Client</p>
+					<p class="fragment">React Web Client</p>
+					<p class="fragment">React-Native Client</p>
+					<p class="fragment">Server</p>
+					<style>
+						#to-build h2 {
+							font-size: 1em;
+							margin: -200px -90px 40px -90px;
+						}
+						#to-build p {
+							font-size: 1em;
+						}
+					</style>
+				</section>
+
+				<section id="user-flow">
+					<aside class="notes">
+						#TODO
+					</aside>
+					<h2>Flow</h2>
+					<p class="fragment">User selects a color</p>
+					<p class="fragment">User clicks squares</p>
+					<p class="fragment">User submits design</p>
+					<p class="fragment">Design is displayed on Raspberry Pi</p>
+
+					<style>
+						#user-flow h2 {
+							font-size: 1.1em;
+							margin: -50px -90px 40px -90px;
+						}
+					</style>
+				</section>
+
+				<section id="user-flow-2">
+					<aside class="notes">
+						#TODO
+					</aside>
+					<p class="fragment">How do I start start?</p>
+					<p class="fragment">How do I keep from getting overwhelmed?</p>
+				</section>
+
+
 
 				<!-- <section class="slide" id="reality-check-3">
 					<h2>Reality Check</h2>
