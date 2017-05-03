@@ -5,7 +5,7 @@
 
 This is a presentation/demo of my first hardware project, [Raspberry Pi Interactive LED Art project](https://github.com/traumverloren/rpi-unicorn-leds). This presentation goes over why I built it, how I built it, and includes a live demo!
 
-This talk will be given at Codeland Conf 2017 in NYC.
+This talk will be given at CodeMotion Amsterdam 2017.
 
 I hope it inspires others to go outside their comfort zone, try new stuff whether it's unfamiliar languages or hardware, and make projects for no other reason than because they wanna!
 
