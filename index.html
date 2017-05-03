@@ -29,7 +29,7 @@
 					<h1>with a Raspberry Pi</h1>
 					<br />
 					<h5>Adventures in trying out hardware, code, and having fun in a personal project</h5>
-					<p id="my-site"><a href="https://stephanie.lol/">stephanie.lol</a></p>
+					<p id="info-line-1"><span id="cc"><img src="images/cc1.png"/><img src="images/cc2.png"/><img src="images/cc3.png"/><img src="images/cc4.png"/></span><span id="my-site"><a href="https://stephanie.lol/">stephanie.lol</a></span></p>
 					<p id="my-name">Stephanie Nemeth<span id="contact-details"><i class="fa fa-twitter"></i> @stephaniecodes</span></p>
 					<style>
 						#cover h1 {
@@ -41,9 +41,25 @@
 							font-style: normal;
 						}
 						#cover p {
-							color:#B2EBF2;
+							color: #B2EBF2;
 							font-family: 'VT323';
-							font-size:1em;
+							font-size: 1em;
+						}
+
+						#cover h5 {
+							margin-bottom: 80px;
+						}
+						#info-line-1 p {
+							text-align: left;
+						}
+
+						#cc {
+							margin: 120px 0 0 0;
+						}
+						#cc img {
+							height: 40px;
+							width: auto;
+							vertical-align:-20px;
 						}
 						#my-name {
 							line-height: 120%;
@@ -57,9 +73,7 @@
 							margin-left: 360px;
 						}
 						#my-site {
-							margin: 90px 0 0;
-							line-height: 130%;
-							text-align: right;
+							margin-left: 570px;
 						}
 					</style>
 				</section>
@@ -1205,16 +1219,19 @@
 
 				<section data-background-color="#00BCD4" id="thanks">
 					<h1>Thank you!</h1>
-					<h5>Now go create something wonderful. <img data-src="images/v-emoji.png"><img data-src="images/hammer-emoji.png"><img data-src="images/purple-heart-emoji.png"></h5>
+					<div id="emoji-images"><h5>Now go create something wonderful. <img data-src="images/v-emoji.png"><img data-src="images/hammer-emoji.png"><img data-src="images/purple-heart-emoji.png"></h5></div>
 					<h6 class="slides-url">Slides available at <a href="https://stephanie.lol/codeland">stephanie.lol/codeland</a></h6>
 
-					<p id="my-site"><a href="http://stephanie.lol/">stephanie.lol</a></p>
+					<p id="info-line-1"><span id="cc"><img data-src="images/cc1.png"/><img data-src="images/cc2.png"/><img data-src="images/cc3.png"/><img data-src="images/cc4.png"/></span><span id="my-site"><a href="https://stephanie.lol/">stephanie.lol</a></span></p>
 					<p id="my-name">Stephanie Nemeth<span id="contact-details"><i class="fa fa-twitter"></i> @stephaniecodes</span></p>
 					<style>
 						#thanks h1 {
 							margin: 20px -30px 90px 0;
 							text-align:left;
 							color: #fff;
+						}
+						.slides-url {
+							margin-bottom: 80px;
 						}
 						#thanks p {
 							color:#B2EBF2;
@@ -1225,14 +1242,30 @@
 							color:#B2EBF2;
 						}
 						#thanks h6 {
-							margin:90px 0 30px;
+							margin:60px 0 106px 0;
 							color:#B2EBF2;
 							text-align:left;
 							font-size:1.1em;
 							font-family: 'VT323', cursive;
 							line-height: 100%;
 						}
-						#thanks img {
+						/*#cc {
+							text-align: left;
+						}*/
+						/*
+						#my-site {
+							margin-left: 570px;
+						}
+						#cc {
+							margin: 120px 0px 0 0;
+						}
+						*/
+						/*#cc img {
+							height: 40px;
+							width: auto;
+							vertical-align:-20px;
+						}*/
+						#emoji-images img {
 							vertical-align: -20%;
 							height: auto;
 							width: 30px;
