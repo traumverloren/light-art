@@ -13,4 +13,18 @@ This was created using [Reveal.JS](https://github.com/hakimel/reveal.js)!
 
 ![rainbow lights](sparkleline.gif)
 
+##### To run locally:
+
+- ``` $ git clone git@github.com:traumverloren/codeland.git ```
+- ``` $ cd codeland ```
+- ``` $ npm install ```
+- ``` $ npm run start ```
+- Go to ```http://localhost:8000``` in your browser (preferably Chrome)
+
+##### On the web:
+
+- Visit [stephanie.lol/codeland](https://stephanie.lol/codeland)
+
+![rainbow lights](sparkleline.gif)
+
 Made with 💚💙💜 by [Stephanie](https://traumverloren.github.io)
