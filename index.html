@@ -679,16 +679,10 @@
 							font-size: 1em;
 							margin: 0px -30px 10px -30px;
 						}
-						#mockup .emoji img {
-							vertical-align: -10px;
-							height: auto;
-							width: 50px;
-							margin-left: 20px;
-						}
 						#mockup img {
 							height: 600px;
 							width: auto;
-							margin-left: 50px;
+							margin-left: -40px;
 						}
 					</style>
 				</section>
@@ -800,7 +794,7 @@
 					<p>Write the web app in React & React-Native</p>
 					<div class="image-container">
 						<img data-src="images/javascript_logo.png" />
-						<img data-src="images/react_logo.jpg" />
+						<img data-src="images/react_logo.png" />
 					</div>
 					<style>
 					#toolkit-ui h2 {
@@ -962,13 +956,13 @@
 					</aside>
 
 					<h2>Socket.IO</h2>
-						<p class="fragment">Enables real-time communication between apps</p>
-						<p class="fragment">Works on every platform, browser or device 💪</p>
-						<p class="fragment">Easy setup: Only a node.js server & client libraries</p>
-						<p class="fragment">Has client libraries for Python and React! 🎉</p>
+					<p class="fragment">Enables real-time communication between apps</p>
+					<p class="fragment">Works on every platform, browser or device 💪</p>
+					<p class="fragment">Easy setup: Only a node.js server & client libraries</p>
+					<p class="fragment">Has client libraries for Python and React! 🎉</p>
 					<style>
 						#socket-intro h2 {
-							margin-top: -200px;
+							margin-top: -150px;
 							margin-left: -50px;
 							margin-right: -50px;
 						}
@@ -976,6 +970,85 @@
 							font-size: 1em;
 							text-align: center;
 							margin: 50px -20px 0px -20px;
+						}
+					</style>
+				</section>
+
+				<section id="socket-server">
+					<h2>Socket.IO Server</h2>
+					<pre><code data-trim>
+						var server = require('http').createServer();
+
+						var io = require('socket.io')(server);
+
+						io.on('connection', function(socket) {
+
+						  socket.on('artSubmitted', function(data) {
+						    io.emit('updateState', data);
+						  });
+
+						});
+
+						server.listen(3000);
+					</code></pre>
+					<style>
+						#socket-server h2 {
+							margin: -100px 0 50px 0;
+						}
+					</style>
+				</section>
+
+				<section id="socket-react-client">
+					<h2>Socket.IO React Client</h2>
+					<pre><code data-trim data-noescape class="javascript">
+						import React, { Component } from 'react';
+						import io from 'socket.io-client';
+
+						const socket = io('https://localhost:8000, {});
+
+						class App extends Component {
+
+						<em>...other code here...</em>
+
+						  sendMessage = (status, data) => {
+						    socket.emit('artSubmitted',
+						      {message: 'Light Design Submitted',
+						       squares: this.state.squares }
+						    )
+						  }
+					 }
+
+					</code></pre>
+					<style>
+						#socket-react-client h2 {
+							margin: -50px 0 50px 0;
+							font-size: 1em;
+						}
+					</style>
+				</section>
+
+				<section id="socket-pi-client">
+					<h2>Socket.IO Pi Client</h2>
+					<pre><code data-trim data-noescape class="python">
+						from socketIO_client import SocketIO
+
+						socketIO = SocketIO('http://localhost:8000')
+
+						def main():
+						    # Gets msg from other client & call updateState method
+						    socketIO.on('updateState', updateState)
+
+						    # Keeps the socket open...
+						    socketIO.wait();
+
+						def updateState(data):
+						    # Do stuff with data & turn on LEDs
+						    <em>...more code here...</em>
+					</code></pre>
+					<style>
+						#socket-pi-client h2 {
+							margin: -100px 0 50px 0;
+							font-size: 1em;
 						}
 					</style>
 				</section>
@@ -995,7 +1068,7 @@
 					<img data-src="images/project-diagram.png" />
 					<style>
 						#my-project-schema h2 {
-							margin: -50px -80px 40px -80px;
+							margin: -80px -80px 40px -80px;
 						}
 						#my-project-schema img {
 							width: auto;
@@ -1329,7 +1402,7 @@
 					<p>(And I ended up landing a new dev job <img data-src="images/smile-emoji.png">)</p>
 					<style>
 						#final-thoughts-conclusion h2 {
-							margin-top: -150px;
+							margin-top: -100px;
 						}
 						#final-thoughts-conclusion p {
 							font-size: 1em;

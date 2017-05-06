@@ -56,14 +56,14 @@
 			progress: true,
 
 			// Shows the slide number using default formatting
-			slideNumber: true,
+			slideNumber: false,
 
 			// Slide number formatting can be configured using these variables:
 			//  "h.v":  horizontal . vertical slide number (default)
 			//  "h/v":  horizontal / vertical slide number
 			//    "c":  flattened slide number
 			//  "c/t":  flattened slide number / total slides
-			slideNumber: 'c',
+			// slideNumber: 'c',
 
 			// Push each slide change to the browser history
 			history: false,
