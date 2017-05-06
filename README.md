@@ -15,15 +15,15 @@ This was created using [Reveal.JS](https://github.com/hakimel/reveal.js)!
 
 ##### To run locally:
 
-- ``` $ git clone git@github.com:traumverloren/codeland.git ```
-- ``` $ cd codeland ```
+- ``` $ git clone git@github.com:traumverloren/codemotion.git ```
+- ``` $ cd codemotion ```
 - ``` $ npm install ```
 - ``` $ npm run start ```
 - Go to ```http://localhost:8000``` in your browser (preferably Chrome)
 
 ##### On the web:
 
-- Visit [stephanie.lol/codeland](https://stephanie.lol/codeland)
+- Visit [stephanie.lol/codemotion](https://stephanie.lol/codemotion)
 
 ![rainbow lights](sparkleline.gif)
 

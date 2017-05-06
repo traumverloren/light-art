@@ -78,6 +78,63 @@
 					</style>
 				</section>
 
+				<section id="about-me">
+					<h2>Hi, I'm Stephanie.</h2>
+					<div class="container">
+						<div class="image-item">
+							<img data-src="images/glitched-selfie.jpg"/>
+						</div>
+						<div class="text-item">
+							<p>Frontend/JS Developer at  <a href="https://www.spronq.nl"><span id="spronq"><img data-src="images/spronq.png" /></span></a></p>
+							<p>Organizer of <a href="http://stupidhackathon.wtf">Stupid Hackathon AMS</a></p>
+							<hr/>
+							<p><i class="fa fa-home"></i> <a href="https://stephanie.lol/">stephanie.lol</a></p>
+							<p><i class="fa fa-twitter"></i><a href="https://twitter.com/stephaniecodes">@stephaniecodes</a></p>						</div>
+					</div>
+					<style>
+					.container {
+					  display: flex;
+						flex-direction: row;
+						justify-content: center;
+						align-items: center;
+					}
+					.container > div:last-child {
+						margin-left: 30px;
+					}
+					.image-item {
+						flex: 1;
+					}
+					.text-item {
+						flex: 1.8;
+					}
+					#about-me img {
+						width: 100%;
+						height: auto;
+					}
+					#about-me h2 {
+						margin: -100px 0px 60px 0px;
+					}
+					#spronq img {
+						width: auto;
+						height: 35px;
+						vertical-align: -25px;
+						margin-left: 5px;
+					}
+					#about-me p {
+						font-size: 0.75em;
+						text-align: left;
+						margin-bottom: 30px;
+					}
+					#about-me hr {
+						margin: 30px 0 30px 0;
+					}
+					#about-me a {
+						color: #00BCD4;
+						text-decoration: none;
+					}
+					</style>
+				</section>
+
 				<section id="tough-times">
 					<h2 class="about-me">Me:</h2>
 					<p><img data-src="images/sad-emoji.png"></p>
@@ -90,6 +147,12 @@
 						- Depressed<br/>
 						- Didn't like what I was becoming<br/>
 						- Decided to venture outside apt<br/>
+					</aside>
+					<style>
+					#tough-times h2 {
+						margin: -100px 0 40px 0;
+					}
+					</style>
 				</section>
 
 				<section class="shout" data-transition="slide" data-background="#00BCD4 linear-gradient(135deg,#00BCD4 50%,#00a5bb 50%) no-repeat" id="stedelijk">
@@ -403,10 +466,98 @@
 					</style>
 				</section>
 
-				<section id="unicorn">
+				<section id="all-the-hats">
 					<aside class="notes">
 						- All diff types of HATs<br/>
 						- Do all diff kinds of things<br/>
+					</aside>
+
+					<h2>Many kinds of HATs</h2>
+					<p><a href="https://www.pimoroni.com">pimoroni.com</a></p>
+					<ul>
+						<img src="images/displayotron-hat.jpeg" alt="display-o-tron" />
+						<img src="images/scroll-hat.jpg" alt="scroll hat" />
+						<img src="images/sensor-hat.jpeg" alt="sensor hat" />
+						<img src="images/drum-hat.jpeg" alt="drum hat" />
+						<img src="images/piano-hat.jpeg" alt="piano hat" />
+						<img src="images/phat-dac.jpeg" alt="phat dac hat" />
+						<div id="over-text-text"><p class="fragment">TEXT</p></div>
+						<div id="over-text-lights"><p class="fragment">LIGHTS</p></div>
+						<div id="over-text-sensor"><p class="fragment">SENSORS</p></div>
+						<div id="over-text-music"><p class="fragment">MUSIC</p></div>
+						<div id="over-text-audio"><p class="fragment">AUDIO</p></div>
+					</ul>
+					<style>
+						#all-the-hats h2 {
+							font-size: 1em;
+							margin: 0px -10px 0px -10px;
+						}
+						#all-the-hats p {
+							font-size: 0.8em;
+							text-align: center;
+							margin: 20px -10px 0px -10px;
+						}
+						#all-the-hats a {
+							color:#00BCD4;
+						}
+						#all-the-hats img {
+							width: 270px;
+							height: auto;
+							margin-top: -20px;
+							padding: 0px;
+							margin-left: -10px;
+							margin-right: -10px;
+						}
+						#over-text-text p {
+							font-size: 1em;
+							font-weight: bold;
+							color: blue;
+							position: absolute;
+							top: 330px;
+							left: -300px;
+							width: 100%;
+						}
+						#over-text-lights p {
+							font-size: 1em;
+							font-weight: bold;
+							color: turquoise;
+							position: absolute;
+							top: 290px;
+							left: -30px;
+							width: 100%;
+						}
+						#over-text-sensor p {
+							font-size: 1em;
+							font-weight: bold;
+							color: lime;
+							position: absolute;
+							top: 200px;
+							left: 445px;
+							width: 100%;
+						}
+						#over-text-audio p {
+							font-size: 1em;
+							font-weight: bold;
+							color: fuchsia;
+							position: absolute;
+							top: 500px;
+							left: 420px;
+							width: 100%;
+						}
+						#over-text-music p {
+							font-size: 1em;
+							font-weight: bold;
+							color: red;
+							position: absolute;
+							top: 600px;
+							left: -180px;
+							width: 100%;
+						}
+					</style>
+				</section>
+
+				<section id="unicorn">
+					<aside class="notes">
 						- I picked Unicorn HAT<br/>
 						- 64-LEDs, 8x8 square grid<br/>
 
@@ -1220,7 +1371,7 @@
 				<section data-background-color="#00BCD4" id="thanks">
 					<h1>Thank you!</h1>
 					<div id="emoji-images"><h5>Now go create something wonderful. <img data-src="images/v-emoji.png"><img data-src="images/hammer-emoji.png"><img data-src="images/purple-heart-emoji.png"></h5></div>
-					<h6 class="slides-url">Slides available at <a href="https://stephanie.lol/codeland">stephanie.lol/codeland</a></h6>
+					<h6 class="slides-url">Slides available at <a href="https://stephanie.lol/codemotion">stephanie.lol/codemotion</a></h6>
 
 					<p id="info-line-1"><span id="cc"><img data-src="images/cc1.png"/><img data-src="images/cc2.png"/><img data-src="images/cc3.png"/><img data-src="images/cc4.png"/></span><span id="my-site"><a href="https://stephanie.lol/">stephanie.lol</a></span></p>
 					<p id="my-name">Stephanie Nemeth<span id="contact-details"><i class="fa fa-twitter"></i> @stephaniecodes</span></p>
@@ -1249,22 +1400,6 @@
 							font-family: 'VT323', cursive;
 							line-height: 100%;
 						}
-						/*#cc {
-							text-align: left;
-						}*/
-						/*
-						#my-site {
-							margin-left: 570px;
-						}
-						#cc {
-							margin: 120px 0px 0 0;
-						}
-						*/
-						/*#cc img {
-							height: 40px;
-							width: auto;
-							vertical-align:-20px;
-						}*/
 						#emoji-images img {
 							vertical-align: -20%;
 							height: auto;

@@ -2,8 +2,8 @@
   "name": "reveal.js",
   "version": "3.4.1",
   "description": "Creating Art with a Raspberry Pi",
-  "homepage": "https://stephanie.lol/codeland",
-  "subdomain": "codeland",
+  "homepage": "https://stephanie.lol/codemotion",
+  "subdomain": "codemotion",
   "main": "js/reveal.js",
   "scripts": {
     "test": "grunt test",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/traumverloren/codeland.git"
+    "url": "git://github.com/traumverloren/codemotion.git"
   },
   "engines": {
     "node": ">=4.0.0"
