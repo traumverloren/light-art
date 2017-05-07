@@ -1004,7 +1004,7 @@
 						import React, { Component } from 'react';
 						import io from 'socket.io-client';
 
-						const socket = io('https://localhost:8000, {});
+						const socket = io('https://localhost:8000', {});
 
 						class App extends Component {
 
@@ -1041,7 +1041,7 @@
 						    socketIO.on('updateState', updateState)
 
 						    # Keeps the socket open...
-						    socketIO.wait();
+						    socketIO.wait()
 
 						def updateState(data):
 						    # Do stuff with data & turn on LEDs
