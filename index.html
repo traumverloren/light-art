@@ -1000,7 +1000,7 @@
 
 				<section id="socket-react-client">
 					<h2>Socket.IO React Client</h2>
-					<pre><code data-trim data-noescape class="javascript">
+					<pre><code data-trim data-noescape>
 						import React, { Component } from 'react';
 						import io from 'socket.io-client';
 
@@ -1010,10 +1010,12 @@
 
 						<em>...other code here...</em>
 
+						  // onSubmit action to send art to Pi
 						  sendMessage = (status, data) => {
 						    socket.emit('artSubmitted',
-						      {message: 'Light Design Submitted',
-						       squares: this.state.squares }
+						      { message: 'Light Design Submitted',
+						        squares: this.state.squares
+            }
 						    )
 						  }
 					 }
@@ -1021,8 +1023,8 @@
 					</code></pre>
 					<style>
 						#socket-react-client h2 {
-							margin: -50px 0 50px 0;
-							font-size: 1em;
+							margin: 20px 0 50px 0;
+							font-size: 1.03em;
 						}
 					</style>
 				</section>
@@ -1352,6 +1354,94 @@
 						}
 						#demo-url a {
 							color:#00BCD4;
+						}
+					</style>
+				</section>
+
+				<section id="surprise">
+					<aside class="notes">
+						- <br/>
+					</aside>
+					<h2>Bonus Project Unlocked!</h2>
+					<p>🎉 Arduino + LEDs + Socket.IO client in my shirt 🎉</p>
+					<img data-src="images/shirt_animation.gif" />
+					<style>
+						#surprise h2 {
+							font-size: 1em;
+							margin: 0px -20px 40px -20px;
+						}
+						#surprise p {
+							font-size: 1em;
+							text-align: center;
+						}
+						#surprise img {
+							margin-top: 20px;
+							height: 450px;
+							width: auto;
+						}
+					</style>
+				</section>
+
+				<section id="project-shirt">
+					<aside class="notes">
+						- <br/>
+					</aside>
+					<h2>Project Design</h2>
+					<img data-src="images/project-diagram-shirt.png" />
+					<style>
+						#project-shirt h2 {
+							margin: 0 50px 25px 0;
+						}
+						#project-shirt img {
+							width: auto;
+							height: auto;
+						}
+					</style>
+				</section>
+
+				<section id="shirt-led">
+					<aside class="notes">
+						- <br/>
+					</aside>
+
+					<h2>Making a Connected Wearable</h2>
+					<p>Arduino + Neopixel LEDs + C++</p>
+					<div id="image-box">
+						<figure>
+							<img data-src="images/feather-huzzah.jpg" />
+							<figcaption>Feather Huzzah ESP8266 WiFi</figcaption>
+						</figure>
+						<img data-src="images/neopixels-strip.jpg" />
+					</div>
+					<style>
+						#shirt-led h2 {
+							font-size: 0.89em;
+							margin: -50px -30px 40px -30px;
+						}
+						#shirt-led p {
+							font-size: 1.1em;
+							text-align: center;
+							margin: 0 -30px 0px -30px;
+						}
+
+						#shirt-led div > * {
+							padding: 0 30px 0 30px;
+						}
+						#shirt-led img {
+							width: 500px;
+							padding: 0 30px 0 30px;
+							height: auto;
+							border-style: none;
+							box-shadow: none;
+						}
+						#shirt-led figcaption {
+							font-size: 0.6em;
+						}
+						#shirt-led {
+							display: flex;
+							justify-content: center;
+							flex-direction: row;
+							align-items: center;
 						}
 					</style>
 				</section>
