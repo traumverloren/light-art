@@ -984,6 +984,16 @@
 				</section>
 
 				<section id="socket-server">
+					<aside class="notes">
+						- Not too much code to add, just include the socketIO library<br/>
+						- create a server<br/>
+						- Then socket.IO works by adding event listeners<br/>
+						- to an instance of http.Server<br/>
+						- event listener for connection<br/>
+						- then can add other events<br/>
+						- when art submitted, server receives artSubmitted<br/>
+						- then emits a message with that data to the pi<br/>
+					</aside>
 					<h2>Socket.IO Server</h2>
 					<pre><code data-trim>
 						var server = require('http').createServer();
@@ -1008,6 +1018,12 @@
 				</section>
 
 				<section id="socket-react-client">
+					<aside class="notes">
+						- again, not too much code to add, just include the socketIO client library<br/>
+						- When pixel art is submitted on the React app<br/>
+						- SocketIO will emit an 'artSubmitted' event<br/>
+						- With info about the squares to light up and the colors<br/>
+					</aside>
 					<h2>Socket.IO React Client</h2>
 					<pre><code data-trim data-noescape>
 						import React, { Component } from 'react';
@@ -1039,6 +1055,11 @@
 				</section>
 
 				<section id="socket-pi-client">
+					<aside class="notes">
+						- I include the socketIO python client library<br/>
+						- Gets updateState msg from server<br/>
+						- With info about the squares to light up and the colors<br/>
+					</aside>
 					<h2>Socket.IO Pi Client</h2>
 					<pre><code data-trim data-noescape class="python">
 						from socketIO_client import SocketIO
@@ -1369,7 +1390,8 @@
 
 				<section id="surprise">
 					<aside class="notes">
-						- <br/>
+						- If noticed, added another part to my project<br/>
+						- Wifi enabled blouse with LEDs<br/>
 					</aside>
 					<h2>Surprise Bonus Project!</h2>
 					<p>🎉 Arduino + LEDs + Socket.IO client in my shirt 🎉</p>
@@ -1393,7 +1415,8 @@
 
 				<section id="project-shirt">
 					<aside class="notes">
-						- <br/>
+						- With the project design I had in place<br/>
+						- I would to add the shirt as another socketIO client<br/>
 					</aside>
 					<h2>Project Design</h2>
 					<img data-src="images/project-diagram-shirt.png" />
@@ -1410,7 +1433,11 @@
 
 				<section id="shirt-led">
 					<aside class="notes">
-						- <br/>
+						- To make the shirt I used<br/>
+						- Arduino: Feather Huzzah<br/>
+						- Neopixels LED strip<br/>
+						- Coded in C++<br/>
+						- Since Neopixel library available in C++<br/>
 					</aside>
 
 					<h2>Making a Connected Wearable</h2>
@@ -1457,7 +1484,13 @@
 
 				<section id="shirt-fritzing">
 					<aside class="notes">
-						- <br/>
+						- Next step was to come up with plan for assembly it all<br/>
+					  - This is important since i would be soldering/wiring for first time<br/>
+						- So i creating a wiring diagram<br/>
+						- helped me visualize how it would put it all together<br/>
+						- The leds controlled by arduino<br/>
+						- Power supplied by li ion battery<br/>
+						- Through an on/off switch<br/>
 					</aside>
 					<h2>Wiring Prototype</h2>
 					<img data-src="images/Huzzah_Shirt_simplified.png" />
@@ -1514,7 +1547,9 @@
 
 				<section id="shirt-build">
 					<aside class="notes">
-						- <br/>
+						- Conquered my fears of wiring & soldering<br/>
+						- First big soldering project<br/>
+						- Soldering. it gets better the more you do it.<br/>
 					</aside>
 					<h2>Achievements Unlocked!</h2>
 					<p>🏆 Wiring + Soldering 🏆</p>
@@ -1539,7 +1574,10 @@
 
 				<section id="breakdown-shirt">
 					<aside class="notes">
-						- <br/>
+						- Again, by breaking up goals<br/>
+						- And achieving my first goal of the RPI pixel art<br/>
+						- Not initimidated to try more complex hardware projects<br/>
+						- Tackle new skills like wiring & soldering<br/>
 					</aside>
 					<h2>Breaking Up Goals</h2>
 					<p class="fragment"><i class="fa fa-check-square-o"></i> Kept adding on to project</p>
