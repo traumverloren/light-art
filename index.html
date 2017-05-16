@@ -167,7 +167,7 @@
 				<section class="shout" data-transition="slide" data-background="#00BCD4 linear-gradient(135deg,#00BCD4 50%,#00a5bb 50%) no-repeat" id="stedelijk">
 					<aside class="notes">
 						- Stedelijk Art Museum<br/>
-						- Amsterdam<br/>
+						- Here in Amsterdam<br/>
 					</aside>
 					<h2 class="shout">I visited an art museum.</h2>
 					<style>
@@ -183,8 +183,9 @@
 						- Jean Tinguely<br/>
 						- Swiss, 60s/70s<br/>
 						- Art NOT about standing in a sterile white space, distantly gazing silent painting<br/>
-						- He made machines produce art themselves<br/>
 						- Art meant to be playful<br/>
+						- He made machines produce art themselves<br/>
+						- Large installations meant to be triggered by a viewer<br/>
 						- Interested in making art interactive w/ viewer<br/>
 						- Therfore Blurring line artist/viewer<br/>
 					</aside>
@@ -244,7 +245,7 @@
 
 				<section id="dream" data-background-image="images/tinguely-art.jpg" data-background-size="cover">
 					<aside class="notes">
-						- That Quote & entire exhibit really inspired me.<br/>
+						- That quote & entire exhibit really inspired me.<br/>
 						- Thought maybe I could build something like that<br/>
 						- At the time, this was ray of light in dark place<br/>
 						- Gave me hope, inspiration when I didn't have any<br/>
@@ -343,7 +344,7 @@
 					<p class="tools-needed fragment">- Coding Skills</p>
 					<p class="tools-needed fragment">-  Artistic Ability</p>
 					<p class="tools-needed fragment">-  Experience Working With Hardware</p>
-					<p class="tools-needed fragment">- Wiring/Soldering Experience</p>
+					<p class="tools-needed fragment">-  Wiring/Soldering Experience</p>
 					<style>
 						#skills i {
 							font-size: 0.5em;
@@ -959,7 +960,7 @@
 						- Particularly for Hardware projects like mine<br/>
 						- Bidirectional communication<br/>
 						- Every browser/device<br/>
-						- Easy setup: Server + Clients<br/>
+						- Straightforward setup: A Server + Clients<br/>
 						- Server relays messages between clients<br/>
 						- Libraries for my tech: Python & React<br/>
 					</aside>
@@ -986,13 +987,13 @@
 				<section id="socket-server">
 					<aside class="notes">
 						- Not too much code to add, just include the socketIO library<br/>
-						- create a server<br/>
+						- Create a server<br/>
 						- Then socket.IO works by adding event listeners<br/>
-						- to an instance of http.Server<br/>
-						- event listener for connection<br/>
+						- To an instance of a Server<br/>
+						- Event listens for connection<br/>
 						- then can add other events<br/>
-						- when art submitted, server receives artSubmitted<br/>
-						- then emits a message with that data to the pi<br/>
+						- Like when art submitted, server receives artSubmitted<br/>
+						- Then emits a message with that data to the pi<br/>
 					</aside>
 					<h2>Socket.IO Server</h2>
 					<pre><code data-trim>
@@ -1019,7 +1020,8 @@
 
 				<section id="socket-react-client">
 					<aside class="notes">
-						- again, not too much code to add, just include the socketIO client library<br/>
+						- Again, not too much code to add,<br/>
+						- Just include the socketIO client library<br/>
 						- When pixel art is submitted on the React app<br/>
 						- SocketIO will emit an 'artSubmitted' event<br/>
 						- With info about the squares to light up and the colors<br/>
@@ -1056,7 +1058,7 @@
 
 				<section id="socket-pi-client">
 					<aside class="notes">
-						- I include the socketIO python client library<br/>
+						- Include the socketIO python client library<br/>
 						- Gets updateState msg from server<br/>
 						- With info about the squares to light up and the colors<br/>
 					</aside>
@@ -1194,7 +1196,7 @@
 						- Broke Project into 3 Milestones<br/>
 						- Turn on one of the LEDs<br/>
 						- Create pixel art in 1 color <br/>
-						- Create pixel art in multiple color <br/>
+						- Create pixel art in multiple colors<br/>
 					</aside>
 
 					<h2>Break Up Goals</h2>
@@ -1415,8 +1417,8 @@
 
 				<section id="project-shirt">
 					<aside class="notes">
-						- With the project design I had in place<br/>
-						- I would to add the shirt as another socketIO client<br/>
+						- With the project design, I had in place<br/>
+						- I could add the shirt as another SocketIO client<br/>
 					</aside>
 					<h2>Project Design</h2>
 					<img data-src="images/project-diagram-shirt.png" />
@@ -1435,9 +1437,9 @@
 					<aside class="notes">
 						- To make the shirt I used<br/>
 						- Arduino: Feather Huzzah<br/>
-						- Neopixels LED strip<br/>
-						- Coded in C++<br/>
-						- Since Neopixel library available in C++<br/>
+						- Neopixels LED strips<br/>
+						- Since there was a library for Neopixels available in C++<br/>
+						- So I coded it in C++<br/>
 					</aside>
 
 					<h2>Making a Connected Wearable</h2>
@@ -1484,13 +1486,14 @@
 
 				<section id="shirt-fritzing">
 					<aside class="notes">
-						- Next step was to come up with plan for assembly it all<br/>
-					  - This is important since i would be soldering/wiring for first time<br/>
-						- So i creating a wiring diagram<br/>
-						- helped me visualize how it would put it all together<br/>
+						- Next step was to come up with plan for actually constructing it<br/>
+						- This was important since I would be soldering/wiring for first time<br/>
 						- The leds controlled by arduino<br/>
-						- Power supplied by li ion battery<br/>
+						- Power supplied by Li ion battery<br/>
 						- Through an on/off switch<br/>
+						- So I created a wiring diagram<br/>
+						- Helped me visualize how it would put it all together<br/>
+						- Keep me grounded + on task during the build<br/>
 					</aside>
 					<h2>Wiring Prototype</h2>
 					<img data-src="images/Huzzah_Shirt_simplified.png" />
@@ -1547,9 +1550,9 @@
 
 				<section id="shirt-build">
 					<aside class="notes">
-						- Conquered my fears of wiring & soldering<br/>
 						- First big soldering project<br/>
-						- Soldering. it gets better the more you do it.<br/>
+						- Conquered my fears of wiring & soldering<br/>
+						- Soldering. It really gets better the more you do it.<br/>
 					</aside>
 					<h2>Achievements Unlocked!</h2>
 					<p>🏆 Wiring + Soldering 🏆</p>
@@ -1575,8 +1578,8 @@
 				<section id="breakdown-shirt">
 					<aside class="notes">
 						- Again, by breaking up goals<br/>
-						- And achieving my first goal of the RPI pixel art<br/>
-						- Not initimidated to try more complex hardware projects<br/>
+						- And by building that first project with the Raspberry Pi<br/>
+						- Wasn't initimidated to try more complex hardware projects<br/>
 						- Tackle new skills like wiring & soldering<br/>
 					</aside>
 					<h2>Breaking Up Goals</h2>
