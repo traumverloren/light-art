@@ -1037,12 +1037,8 @@
 						<em>...other code here...</em>
 
 						  // onSubmit action to send art to Pi
-						  sendMessage = (status, data) => {
-						    socket.emit('artSubmitted',
-						      { message: 'Light Design Submitted',
-						        squares: this.state.squares
-            }
-						    )
+						  sendMessage = (message, data) => {
+						    socket.emit(message, data);
 						  }
 					 }
 
