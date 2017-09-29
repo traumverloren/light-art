@@ -15,12 +15,14 @@
 
 		<!-- Printing and PDF exports -->
 		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+		var link = document.createElement('link');
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match(/print-pdf/gi)
+  ? 'css/print/pdf.css'
+  : 'css/print/paper.css';
+document.getElementsByTagName('head')[0].appendChild(link);
+</script>
 	</head>
 	<body>
 		<div class="reveal">
@@ -1684,7 +1686,7 @@
 				<section data-background-color="#00BCD4" id="thanks">
 					<h1>Thank you!</h1>
 					<div id="emoji-images"><h5>Now go create something wonderful. <img data-src="images/v-emoji.png"><img data-src="images/hammer-emoji.png"><img data-src="images/purple-heart-emoji.png"></h5></div>
-					<h6 class="slides-url">Slides available at <a href="https://stephanie.lol/codemotion">stephanie.lol/codemotion</a></h6>
+					<h6 class="slides-url">Slides available at <a href="https://stephanie.lol/light-art">stephanie.lol/light-art</a></h6>
 
 					<p id="info-line-1"><span id="cc"><img data-src="images/cc1.png"/><img data-src="images/cc2.png"/><img data-src="images/cc3.png"/><img data-src="images/cc4.png"/></span><span id="my-site"><a href="https://stephanie.lol/">stephanie.lol</a></span></p>
 					<p id="my-name">Stephanie Nemeth<span id="contact-details"><i class="fa fa-twitter"></i> @stephaniecodes</span></p>
@@ -1729,21 +1731,27 @@
 		<script src="js/reveal.js"></script>
 
 		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
+		// More info https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+  history: true,
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'socket.io/socket.io.js', async: true },
-					// speaker notes
-					{ src: 'plugin/notes-server/client.js', async: true },
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
+  // More info https://github.com/hakimel/reveal.js#dependencies
+  dependencies: [
+    { src: 'socket.io/socket.io.js', async: true },
+    // speaker notes
+    { src: 'plugin/notes-server/client.js', async: true },
+    { src: 'plugin/markdown/marked.js' },
+    { src: 'plugin/markdown/markdown.js' },
+    { src: 'plugin/notes/notes.js', async: true },
+    {
+      src: 'plugin/highlight/highlight.js',
+      async: true,
+      callback: function() {
+        hljs.initHighlightingOnLoad();
+      }
+    }
+  ]
+});
+</script>
 	</body>
 </html>
