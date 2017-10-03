@@ -15,16 +15,16 @@ This was created using [Reveal.JS](https://github.com/hakimel/reveal.js)!
 
 ##### To run locally:
 
-- ``` $ git clone git@github.com:traumverloren/codemotion.git ```
-- ``` $ cd codemotion ```
+- ``` $ git clone git@github.com:traumverloren/light-art.git ```
+- ``` $ cd light-art ```
 - ``` $ npm install ```
 - ``` $ npm run start ```
 - Go to ```http://localhost:8000``` in your browser (preferably Chrome)
 
 ##### On the web:
 
-- Visit [stephanie.lol/codemotion](https://stephanie.lol/codemotion)
+- Visit [stephanie.lol/light-art](https://stephanie.lol/light-art)
 
 ![rainbow lights](sparkleline.gif)
 
-Made with 💚💙💜 by [Stephanie](https://traumverloren.github.io)
+Made with 💚💙💜 by [Stephanie](https://stephanie.lol)
